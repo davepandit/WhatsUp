@@ -10,6 +10,10 @@ app.get("/api/chat", (req, res) => {
   res.send(chats);
 });
 
+app.get("/api/login", (req, res) => {
+  res.send("This will later be used for login");
+});
+
 app.get("/api/chat/:id", (req, res) => {
   const { id } = req.params;
   // search the specific chat
